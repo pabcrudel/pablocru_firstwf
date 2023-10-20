@@ -1,0 +1,13 @@
+name: Greet workflow on Windows
+
+on: workflow_dispatch
+
+jobs:
+  first_job:
+    runs-on: windows-latest
+    steps:
+      - name: Print Hello
+        run: echo "Hello World Action on Windows"
+
+      - name: Print bye
+        run: echo "bye bye"
