@@ -1,0 +1,13 @@
+name: Greet workflow on MacOS
+
+on: workflow_dispatch
+
+jobs:
+  first_job:
+    runs-on: macos-latest
+    steps:
+      - name: Print Hello
+        run: echo "Hello World Action on MacOS"
+
+      - name: Print bye
+        run: echo "bye bye"
